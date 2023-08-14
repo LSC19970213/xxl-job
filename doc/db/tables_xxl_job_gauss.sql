@@ -51,8 +51,8 @@ CREATE TABLE "xxl_job_info" (
                                 "glue_updatetime" timestamp(0),
                                 "child_jobid" varchar(500) COLLATE "pg_catalog"."default",
                                 "trigger_status" int4 NOT NULL DEFAULT 0,
-                                "trigger_last_time" int4 NOT NULL DEFAULT 0,
-                                "trigger_next_time" int4 NOT NULL DEFAULT 0,
+                                "trigger_last_time" bigint NOT NULL DEFAULT 0,
+                                "trigger_next_time" bigint NOT NULL DEFAULT 0,
                                 "misfire_strategy" varchar(50) COLLATE "pg_catalog"."default",
                                 "schedule_type" varchar(50) COLLATE "pg_catalog"."default",
                                 "schedule_conf" varchar(128) COLLATE "pg_catalog"."default"
